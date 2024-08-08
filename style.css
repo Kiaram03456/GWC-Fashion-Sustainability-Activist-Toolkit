@@ -1,0 +1,158 @@
+/* STYLE SECTIONING TAGS */
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+   background-color: #8130F2; 
+   text-align: center;
+   color: white;
+   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+   font-size: 20px;
+}
+
+nav {
+   background-color: #F2B694;
+   border-style: solid;
+   border-width: 3px;
+   border-color: #E1F25C;
+}
+
+header {
+   padding: 5%;
+   color: #e57615;
+   font-family: "Pacifico";
+   font-weight: lighter;
+   font-size: 25px;
+   border-style: solid;
+   border-width: 3px;
+   background-size: cover;
+   background-position: center;
+}
+
+main {
+   margin: 2%;
+   border-style: solid;
+   border-width: 3px;
+}
+
+/* sets background of headers into images */
+#homeheader {
+   background-image: url(assets/Protest.jpg);
+   background-color: #cccccc;
+}
+#backgroundheader {
+   background-image: url(assets/SewingMachine.jpg);
+   background-color: #cccccc;
+}
+#resourcesheader {
+   background-image: url(assets/coffeeandnotebook.jpg);
+   background-color: #cccccc;
+}
+#actionheader {
+   background-image: url(assets/FieldsofGrass.jpg);
+   background-color: #cccccc;
+}
+.homefacts {
+   background-color: #F2B694;
+   border-radius: 10px;
+   margin-left: 35%;
+   margin-right: 35%;
+   padding: 15px;
+}
+
+
+/* STYLE TEXT */
+p, h2, h3, h4 {
+   padding-left: 10%;
+   padding-right: 10%;
+   margin: 3%;
+}
+
+h2, h3, h4 {
+   font-size: 30px;
+   font-weight: lighter;
+   font-family: "Pacifico";
+   color: #E1F25C;
+}
+
+#fact {
+   font-family: arial;
+   color: #e57615;
+   font-size: 24px;
+   font-weight: bold;
+}
+
+#factsdescription {
+   color: #8130F2;
+}
+
+a {
+   color: #e57615;
+   text-decoration: none;
+}
+
+/* Visited link */
+a:visited {
+   color: #e57615;
+}
+
+/* Hovered link */
+a:hover {
+   color: E1F25C;
+   text-decoration: underline; /* underline when hovered */
+}
+
+/* Active link */
+a:active {
+   color: e57615;
+}
+/* STYLE IMAGES */
+img {
+   max-width: 50%;
+   border-style: solid;
+   border-width: 3px;
+   border-radius: 15%;
+}
+
+.resrc { /* sets max width of three images on resources page */
+   max-width: 300px;
+   margin: 5%;
+}
+
+.image-container { /* centres three, inline images on the home page */
+   display: flex;
+   flex-wrap: nowrap;
+   flex-direction: row;
+   justify-content: center
+   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+   .image-container {
+      flex-wrap: wrap; /* images will wrap to the next line on smaller screens */
+   }
+}
+
+/* STYLE NAV BAR */
+ul {
+     list-style-type: none;
+     overflow: hidden;
+}
+.navul {
+     text-align: right;
+}
+.navli {
+     display: inline;
+}
+.navli a {
+   text-decoration: none;
+   color: #8130F2;
+   font-size: 15px;
+   padding: 0.5%;
+   padding-top: 9%;
+   padding-bottom: 9%; 
+}
+.navli a:hover {
+  background-color: #E1F25C;
